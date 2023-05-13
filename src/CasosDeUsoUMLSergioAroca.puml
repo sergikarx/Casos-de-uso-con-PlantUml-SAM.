@@ -1,15 +1,9 @@
 @startuml
 
 left to right direction
+ClienteVIP -- (Elegir asientos)
+ClienteVIP --|> Cliente
 
-:Cliente: as Cliente
-:Restaurante: as Restaurante
+Cliente --(Reservar vuelo)
 
-rectangle {
-Cliente -- (Mostrar menú)
-Cliente -- (Pedir comida)
-(Mostrar menú) -- Restaurante
-}
-
-Restaurante -- (Entregar comida)
 @enduml
