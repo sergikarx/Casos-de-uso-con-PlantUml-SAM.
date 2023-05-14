@@ -1,9 +1,14 @@
 @startuml
 
-left to right direction
-ClienteVIP -- (Elegir asientos)
-ClienteVIP --|> Cliente
+(SacarDinero) <.."<<Extend>>" (Retener tarjeta)
+note as N1
+ <u>Descripcion__________________________________________________________________________________________________________________</u>
+  condición:
+    {historia sospechosa}
+  punto de extensión:
+    solicitud hecha
+end note
 
-Cliente --(Reservar vuelo)
 
+N1 -- (SacarDinero)
 @enduml
